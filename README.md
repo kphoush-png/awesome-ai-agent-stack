@@ -8,8 +8,8 @@ Most "awesome agent" lists are a flat wall of links. This one is a **stack**: st
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
-![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/awesome-ai-agent-stack)
-![Stars](https://img.shields.io/github/stars/YOUR_USERNAME/awesome-ai-agent-stack?style=social)
+![Last Commit](https://img.shields.io/github/last-commit/kphoush-png/awesome-ai-agent-stack)
+![Stars](https://img.shields.io/github/stars/kphoush-png/awesome-ai-agent-stack?style=social)
 
 </div>
 
