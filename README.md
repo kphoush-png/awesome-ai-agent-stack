@@ -91,6 +91,8 @@ Building your first agent? Do these in order:
 
 - [Ollama](https://github.com/ollama/ollama) — Run open models (Llama, Qwen, Mistral…) locally with one command.
 - [vLLM](https://github.com/vllm-project/vllm) — High-throughput, memory-efficient inference server for production.
+- [SGLang](https://github.com/sgl-project/sglang) — Fast serving framework for LLMs and vision models; strong structured-output support.
+- [Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference) — Hugging Face's production inference server for open models.
 - [LiteLLM](https://github.com/BerriAI/litellm) — One OpenAI-compatible API in front of 100+ model providers; essential for provider-agnostic agents.
 - [llama.cpp](https://github.com/ggml-org/llama.cpp) — Fast CPU/GPU inference for GGUF models; powers much of the local ecosystem.
 - [LM Studio](https://lmstudio.ai/) — Desktop app for running and serving local models with a GUI.
@@ -106,8 +108,12 @@ Building your first agent? Do these in order:
 - [Pydantic AI](https://github.com/pydantic/pydantic-ai) — Type-safe agents built on Pydantic; clean and minimal.
 - [CrewAI](https://github.com/crewAIInc/crewAI) — Role-playing autonomous agents that collaborate as a "crew."
 - [Microsoft AutoGen](https://github.com/microsoft/autogen) — Multi-agent conversation framework from Microsoft Research.
+- [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) — Microsoft's unified successor to AutoGen + Semantic Kernel.
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) — Microsoft's SDK for AI orchestration across .NET, Python, Java.
 - [Agno](https://github.com/agno-agi/agno) — Full-stack framework for multi-modal agents (formerly Phidata).
+- [Mastra](https://github.com/mastra-ai/mastra) — TypeScript framework bundling agents, workflows, memory, evals, and observability.
+- [Strands Agents](https://github.com/strands-agents/sdk-python) — AWS's model-driven, lightweight agent SDK.
+- [DSPy](https://github.com/stanfordnlp/dspy) — Programmatic prompting: define pipelines in code and let them be compiled/optimized.
 - [Haystack](https://github.com/deepset-ai/haystack) — Composable pipelines for RAG and agents.
 - [Atomic Agents](https://github.com/BrainBlend-AI/atomic-agents) — Minimal, modular, "Lego-block" approach to agents.
 - [smolagents](https://github.com/huggingface/smolagents) — Tiny agent library from Hugging Face; agents that write code as actions.
@@ -121,6 +127,8 @@ Building your first agent? Do these in order:
 - [Temporal](https://github.com/temporalio/temporal) — Durable execution engine; increasingly used to make agent workflows reliable.
 - [Burr](https://github.com/apache/burr) — State machines for decision-making applications and agents.
 - [Agent Development Kit (ADK)](https://github.com/google/adk-python) — Google's framework for building and orchestrating agents.
+- [mcp-agent](https://github.com/lastmile-ai/mcp-agent) — Build agents that compose and orchestrate across multiple MCP servers.
+- [A2A (Agent2Agent)](https://github.com/a2aproject/A2A) — Open protocol for interoperability between independent agents.
 
 ## 3. Retrieval (RAG)
 
@@ -144,6 +152,7 @@ Building your first agent? Do these in order:
 - [Mem0](https://github.com/mem0ai/mem0) — A memory layer for AI agents and assistants.
 - [Letta](https://github.com/letta-ai/letta) — Stateful agents with long-term memory (formerly MemGPT).
 - [Zep](https://github.com/getzep/zep) — Long-term memory and context engineering for agents.
+- [Graphiti](https://github.com/getzep/graphiti) — Build real-time, temporally-aware knowledge graphs for agent memory.
 - [Cognee](https://github.com/topoteretes/cognee) — Memory for agents using knowledge graphs + vector stores.
 
 ## 5. Tools & Actions
@@ -151,6 +160,7 @@ Building your first agent? Do these in order:
 > **What this layer is for:** letting agents *do* things — call APIs, browse, run code. The **Model Context Protocol (MCP)** is becoming the standard interface here.
 
 - [Model Context Protocol](https://github.com/modelcontextprotocol) — Open standard for connecting agents to tools and data (spec + SDKs).
+- [FastMCP](https://github.com/jlowin/fastmcp) — The fast, Pythonic way to build MCP servers and clients ("FastAPI for MCP").
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) — Directory of ready-to-use MCP servers.
 - [Composio](https://github.com/ComposioHQ/composio) — 250+ ready-made tool integrations for agents.
 - [Browser Use](https://github.com/browser-use/browser-use) — Let agents control a real browser.
@@ -164,6 +174,8 @@ Building your first agent? Do these in order:
 - [Ragas](https://github.com/explodinggradients/ragas) — Evaluation toolkit for RAG and agent pipelines.
 - [DeepEval](https://github.com/confident-ai/deepeval) — "Pytest for LLMs" — unit-test your agents.
 - [promptfoo](https://github.com/promptfoo/promptfoo) — Test, evaluate, and red-team prompts and agents from the CLI.
+- [Opik](https://github.com/comet-ml/opik) — Open-source eval + tracing platform (Apache-2.0) from Comet.
+- [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) — Rigorous evals framework from the UK AI Safety Institute.
 - [Phoenix](https://github.com/Arize-ai/phoenix) — Open-source eval + observability from Arize.
 
 ## 7. Observability
@@ -172,6 +184,8 @@ Building your first agent? Do these in order:
 
 - [Langfuse](https://github.com/langfuse/langfuse) — Open-source LLM engineering platform: tracing, evals, prompt management.
 - [Helicone](https://github.com/Helicone/helicone) — Observability and logging proxy for LLM apps.
+- [Laminar](https://github.com/lmnr-ai/lmnr) — Open-source tracing + evals platform built for agent engineering (Apache-2.0).
+- [AgentOps](https://github.com/AgentOps-AI/agentops) — Session replay, metrics, and monitoring for agents (fully open-source dashboard).
 - [OpenLLMetry](https://github.com/traceloop/openllmetry) — OpenTelemetry-based observability for LLM apps.
 
 ## 8. Deployment & Runtime
@@ -200,6 +214,10 @@ Building your first agent? Do these in order:
 - [Cline](https://github.com/cline/cline) — Autonomous coding agent in your IDE.
 - [SWE-agent](https://github.com/SWE-agent/SWE-agent) — Agents that fix GitHub issues autonomously (Princeton).
 - [Continue](https://github.com/continuedev/continue) — Open-source AI code assistant for VS Code and JetBrains.
+- [OpenCode](https://github.com/sst/opencode) — Open-source AI coding agent built for the terminal.
+- [Roo Code](https://github.com/RooCodeInc/Roo-Code) — Autonomous coding agent (a VS Code fork of the Cline lineage) with multiple modes.
+- [Goose](https://github.com/block/goose) — Local, extensible on-machine coding/automation agent from Block.
+- [Codex CLI](https://github.com/openai/codex) — OpenAI's lightweight coding agent for the terminal.
 
 ## 🏗️ Low-Code / Visual Builders
 
