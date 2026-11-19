@@ -1,0 +1,59 @@
+name: 💡 Suggest a tool
+description: Suggest a tool, framework, or resource to add to the list
+title: "[Add] <Project Name>"
+labels: ["suggestion"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      placeholder: e.g. LangGraph
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      placeholder: https://github.com/org/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Which layer does it belong to?
+      options:
+        - 0. Models & Serving
+        - 1. Agent Frameworks
+        - 2. Orchestration & Multi-Agent
+        - 3. Retrieval (RAG)
+        - 4. Memory & State
+        - 5. Tools & Actions
+        - 6. Evaluation & Testing
+        - 7. Observability
+        - 8. Deployment & Runtime
+        - 9. UI & Interaction
+        - Coding Agents
+        - Low-Code / Visual Builders
+        - Learning Resources
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: One-line description
+      description: Present tense — what it does and why it belongs in that layer.
+      placeholder: Low-level, graph-based orchestration for stateful, controllable agents.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Quality checks
+      options:
+        - label: It's open-source or has a meaningful free/open tier
+          required: true
+        - label: It's actively maintained (commit in the last ~6 months)
+          required: true
+        - label: It's not already in the list
+          required: true
